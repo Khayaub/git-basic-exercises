@@ -1,0 +1,124 @@
+    1  ls
+    2  #!/bin/sh -e
+    3  vcpkgRootDir=$(X= cd -- "$(dirname -- "$0")" && pwd -P)
+    4  . "$vcpkgRootDir/scripts/bootstrap.sh"
+    5  #!/bin/sh -e
+    6  vcpkgRootDir=$(X= cd -- "$(dirname -- "$0")" && pwd -P)
+    7  . "$vcpkgRootDir/scripts/bootstrap.sh"
+    8  #!/bin/sh -e
+    9  vcpkgRootDir=$(X= cd -- "$(dirname -- "$0")" && pwd -P)
+   10  . "$vcpkgRootDir/scripts/bootstrap.sh"
+   11  #!/bin/sh -e
+   12  vcpkgRootDir=$(X= cd -- "$(dirname -- "$0")" && pwd -P)
+   13  . "$vcpkgRootDir/scripts/bootstrap.sh"
+   14  #!/bin/sh -e
+   15  vcpkgRootDir=$(X= cd -- "$(dirname -- "$0")" && pwd -P)
+   16  . "$vcpkgRootDir/scripts/bootstrap.sh"
+   17  #!/bin/sh
+   18  # Find .vcpkg-root, which indicates the root of this repo
+   19  vcpkgRootDir=$(X= cd -- "$(dirname -- "$0")" && pwd -P)
+   20  while [ "$vcpkgRootDir" != "/" ] && ! [ -e "$vcpkgRootDir/.vcpkg-root" ]; do     vcpkgRootDir="$(dirname "$vcpkgRootDir")"; done
+   21  # Enable using this entry point on windows from git bash by redirecting to the .bat file.
+   22  unixName=$(uname -s | sed 's/MINGW.*_NT.*/MINGW_NT/')
+   23  if [ "$unixName" = "MINGW_NT" ]; then   vcpkgRootDir=$(cygpath -aw "$vcpkgRootDir");   cmd "/C $vcpkgRootDir\\bootstrap-vcpkg.bat" || exit 1;   exit 0; fi
+   24  #!/bin/sh
+   25  # Find .vcpkg-root, which indicates the root of this repo
+   26  vcpkgRootDir=$(X= cd -- "$(dirname -- "$0")" && pwd -P)
+   27  while [ "$vcpkgRootDir" != "/" ] && ! [ -e "$vcpkgRootDir/.vcpkg-root" ]; do     vcpkgRootDir="$(dirname "$vcpkgRootDir")"; done
+   28  # Enable using this entry point on windows from git bash by redirecting to the .bat file.
+   29  unixName=$(uname -s | sed 's/MINGW.*_NT.*/MINGW_NT/')
+   30  if [ "$unixName" = "MINGW_NT" ]; then   vcpkgRootDir=$(cygpath -aw "$vcpkgRootDir");   cmd "/C $vcpkgRootDir\\bootstrap-vcpkg.bat" || exit 1;   exit 0; fi
+   31  cd
+   32  ls
+   33  cd c:/users/khaya/
+   34  ls
+   35  cd c:/users/khaya/git-basic-exercises
+   36  ls
+   37  cd
+   38  c:/users/khaya/umuzi
+   39  ls
+   40  cd c:/users/khaya/umuzi/
+   41  mkdir preBootcamp
+   42  ls
+   43  ls -a
+   44  cd c:/users/khaya/umuzi/preBootcamp
+   45  git clone https://github.com/Khayaub/umuziPreBootcamp.git
+   46  ls
+   47  ls -a
+   48  /umuziPreBootcamp
+   49  cd c:/users/khaya/umuzi/preBootcamp/umuziPreBootcamp
+   50  ls
+   51  nano task1.py
+   52  cat task9.py
+   53  ls
+   54  cat README.md
+   55  cd
+   56  cd c:/users/khaya/umuzi/
+   57  mkdir git-basic-exercises
+   58  ls
+   59  cd c:/users/khaya/umuzi/git-basic-exercises
+   60  ls -a
+   61  git init
+   62  ls - a
+   63  ls -a
+   64  git status
+   65  touch README.md
+   66  ls -a
+   67  git status
+   68  git log
+   69  git add README.md
+   70  git status
+   71  git rm --cached README.md
+   72  git status
+   73  git add README.md
+   74  git status
+   75  git commit -m "initial commit"
+   76  git log
+   77  nano README.md
+   78  cat README.md
+   79  git status
+   80  git stats
+   81  git status
+   82  git add README.md
+   83  git status
+   84  git commit -m "second commit"
+   85  git status
+   86  nano README.md
+   87  git status
+   88  git add README.md
+   89  git status
+   90  git commit -m "third commit"
+   91  git status
+   92  git log
+   93  git checkout 92559009a34364b2fded4fac50681dd17bd3579c
+   94  cat README.md
+   95  git checkout master
+   96  cat READMD.md
+   97  cat README.md
+   98  git branch
+   99  git branch milkshake-flavours
+  100  git branch
+  101  git branch milkshake-flavours
+  102  git checkout branch milkshake-flavours
+  103  git branch
+  104  git checkout milkshake-flavours
+  105  git branch
+  106  nano milkshakes.md
+  107  git status
+  108  git add milkshake-flavours.md
+  109  git add milkshakes.md
+  110  git status
+  111  git commit -m "added initial flavours"
+  112  git status
+  113  ls -a
+  114  cat README.MD
+  115  git log
+  116  git checkout master
+  117  git branch
+  118  ls -a
+  119  git branch history
+  120  git branch
+  121  git checkout history
+  122  git log
+  123  git branch
+  124  history > history.txt
